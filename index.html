@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json"> <!-- Link to the manifest file -->
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self';">
+    <title>HomeWise</title>
+</head>
+<body>
+    <header>
+        <h1>HomeWise</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Temperature Control</h2>
+            <div id="temperatureDisplay" class="temperature-display"></div>
+            <button id="increaseTemp">Increase Temp</button>
+            <button id="decreaseTemp">Decrease Temp</button>
+        </section>
+        <section>
+            <h2>Music Player</h2>
+            <div id="songName" class="song-name">Press Play to Get Groovy!</div>
+            <button id="playPause"><i class="fas fa-play"></i> Play</button>
+            <button id="stop"><i class="fas fa-stop"></i> Stop</button>
+            <button id="nextTrack"><i class="fas fa-forward"></i> Next</button>
+        </section>
+        <section>
+            <h2>Lighting Control</h2>
+            <label class="switch">
+                <input type="checkbox" id="lightSwitch">
+                <span class="slider"></span>
+            </label>
+        </section>
+    </main>
+     <!-- Footer section -->
+        <footer id="footer">
+            <p>&copy; 2024 Everson-Nu.</p>
+        </footer>
+    <audio id="clickSound" src="sound/click.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
